@@ -1,0 +1,12 @@
+/* This is code for custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #dddcdc;
+}
+::-webkit-scrollbar-thumb {
+  background: #605c5c;
+  border-radius: 4px;
+}
