@@ -167,7 +167,7 @@ const Home = () => {
                   <img
                     className="w-auto lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 mb-14 rounded-lg bg-blend-multiply"
                     src={ankitsahu}
-                    alt="App screenshot"
+                    alt="ankit_sahu_hero"
                   />
                 </Ripple>
               </div>

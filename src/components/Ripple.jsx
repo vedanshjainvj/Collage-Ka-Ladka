@@ -122,7 +122,7 @@ const Ripple = React.memo(function Ripple({
                   size={12}
                 />
               </span>
-              <div className="w-full flex flex-col items-center justify-center mx-4">
+              <div className="w-full flex flex-col items-center justify-center mx-4 md:mr-20">
                 <H3> 180+</H3>
                 <P>Brand Joined</P>
               </div>
