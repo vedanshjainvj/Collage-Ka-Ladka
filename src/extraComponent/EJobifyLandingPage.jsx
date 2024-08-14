@@ -203,7 +203,7 @@ export default function EJobifyLandingPage() {
     <>
       {/* <Navbar /> */}
       <MaxWidthWrapper className="px-2 sm:px-4 md:px-0 overflow-auto  py-10 ">
-        <div className="grid grid-cols-1 lg:grid-cols-2  lg:gap-8 place-items-center space-y-6">
+        <div className="grid px-4 md:px-0 grid-cols-1 lg:grid-cols-2  lg:gap-8 place-items-center space-y-6">
           <div className="flex flex-col space-y-6 sm:space-y-10 lg:items-center text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto">
             <Motion direction="left">
               <h1 className=" font-normal leading-tight text-teal-950  text-4xl sm:text-5xl lg:text-6xl">
@@ -246,7 +246,7 @@ export default function EJobifyLandingPage() {
                   src={aboutimg2}
                   alt="buildind plan image"
                   width={300}
-                  className="w-full h-full object-cover z-30"
+                  className="w-full h-full object-contain md:object-cover z-30"
                 />
               </div>
             </Motion>
