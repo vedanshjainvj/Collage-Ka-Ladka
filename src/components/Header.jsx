@@ -25,9 +25,8 @@ const Header = () => {
     { title: "Projects", path: "/projects" },
     { title: "Services", path: "/services" },
     {
-      title: "Blog",
-      path: "/blog",
-      submenu: [{ title: "Single Blog", path: "/blog/single-blog" }],
+      title: "Team",
+      path: "/our-team",
     },
     { title: "Contact", path: "/contact" },
   ];
@@ -56,7 +55,7 @@ const Header = () => {
                 <img
                   src={mylogo}
                   className="mx-auto h-6 w-auto object-cover"
-                  alt="mediaPro"
+                  alt="collagekaladka"
                 />
               </Link>
             </div>
@@ -132,7 +131,7 @@ const Header = () => {
                 <img
                   src={mylogo}
                   className="mx-auto h-6 w-auto object-cover"
-                  alt="mediaPro"
+                  alt="collagekaladka "
                 />
               </Link>
             </SheetTitle>

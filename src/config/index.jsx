@@ -226,7 +226,7 @@ export const numCard = [
 ];
 
 export const partner = [
-  { src: "./assets/partner-1.png" },
+  { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAICLqn_cZUzh16ZmB_9JIhR43Dwv_ie4Xxw&s" },
   { src: "./assets/partner-2.png" },
   { src: "./assets/partner-3.png" },
   { src: "./assets/partner-4.png" },

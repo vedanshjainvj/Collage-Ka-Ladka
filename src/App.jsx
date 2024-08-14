@@ -38,12 +38,14 @@ const App = () => {
 
 export default App;
 import "./App.css";
+import OurTeam from "./page/OurTeam";
 
 export const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/our-team" element={<OurTeam />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
