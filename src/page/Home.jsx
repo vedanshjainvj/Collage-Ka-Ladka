@@ -38,6 +38,8 @@ import EAccordian from "../extraComponent/EAccordian";
 import GrowComponentHeroSection from "../extraComponent/GrowComponentHeroSection";
 import EBigIdea from "../extraComponent/EBigIdea";
 import EContactFormTwo from "../extraComponent/EContactFormTwo";
+import ankitimg from "../assets/ankitimg.png";
+import AnimatedText from "../components/AnimatedText";
 
 const Feature = ({
   title,
@@ -143,15 +145,15 @@ const Home = () => {
                 <div className="flex items-center justify-center lg:justify-start">
                   <AvatarCircles
                     avatarUrls={[
-                      "https://i.pravatar.cc/300?img=1",
-                      "https://i.pravatar.cc/300?img=2",
-                      "https://i.pravatar.cc/300?img=3",
-                      "https://i.pravatar.cc/300?img=4",
+                      "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
+                   "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
+                "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
+                "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
                     ]}
                     // numPeople={1000}
                   />
                   <span className="ml-3 text-sm font-medium text-zinc-600">
-                    3460+ Satisfied Clients
+                    115+ Satisfied Clients
                   </span>
                 </div>
               </div>
@@ -161,9 +163,9 @@ const Home = () => {
                 <Ripple
                   mainCircleSize={240}
                   numCircles={5}
-                  colors={["#50497b", "#3d3568"]}
+                  colors={["#FF8C00", "#FF4500"]}
                   sectionOne
-                >
+                > 
                   <img
                     className="w-auto lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 mb-14 rounded-lg bg-blend-multiply"
                     src={ankitsahu}
@@ -212,7 +214,7 @@ const Home = () => {
         >
           <img
             className="w-auto lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg bg-blend-multiply"
-            src="./assets/hero-section-boy.png"
+            src={ankitimg}
             alt="Collage ka Ladka Team"
           />
         </Ripple>
@@ -281,6 +283,9 @@ const Home = () => {
     </div>
   </MaxWidthWrapper>
 </MaxWidthWrapper>
+
+{/* <AnimatedText></AnimatedText> */}
+
 
 
 <EUI></EUI>

@@ -197,28 +197,28 @@ export const pricing = [
 export const numCard = [
   {
     title: "Satisfied Clients",
-    value: "3460",
+    value: "155",
     icon: <FaUsers size={48} className="text-[#ff6400]" />,
     description:
       "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incidiu ",
   },
   {
     title: "Successful Campaigns",
-    value: "8550 ",
+    value: "540 ",
     icon: <CheckCircle size={48} className="text-[#ff6400]" />,
     description:
       "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incidiu ",
   },
   {
     title: "Brands Joined",
-    value: "180",
+    value: "25",
     icon: <Handshake size={48} className="text-[#ff6400]" />,
     description:
       "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incidiu ",
   },
   {
     title: "Marketing Experts",
-    value: "85",
+    value: "15",
     icon: <PiUsersThreeFill size={48} className="text-[#ff6400]" />,
     description:
       "Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incidiu ",

@@ -1,8 +1,12 @@
 import React from 'react'
+import EJobifyLandingPage from '../extraComponent/EJobifyLandingPage'
+
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <EJobifyLandingPage></EJobifyLandingPage>
+    </>
   )
 }
 

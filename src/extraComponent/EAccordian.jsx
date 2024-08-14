@@ -32,13 +32,13 @@ const EAccordian = () => {
           <Motion direction="left">
             <div class="grid grid-cols-2 divide-x-2 divide-zinc-200">
               <div className="pr-6">
-                <div className="text-4xl font-bold text-[#368764]">500+</div>
+                <div className="text-4xl font-bold text-[#368764]">250+</div>
                 <P className="text-base text-zinc-600">
                   Projects Completed
                 </P>
               </div>
               <div className="pl-8">
-                <div className="text-4xl font-bold text-[#368764]">200+</div>
+                <div className="text-4xl font-bold text-[#368764]">115+</div>
                 <P className="text-base text-zinc-600">
                   Satisfied Clients
                 </P>

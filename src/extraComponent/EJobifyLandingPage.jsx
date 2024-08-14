@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Motion } from "./Motion";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Button from "./Button";
+import aboutimg2 from '../assets/aboutimg3.png'
 import {
   Sheet,
   SheetContent,
@@ -200,21 +201,18 @@ const Navbar = () => {
 export default function EJobifyLandingPage() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <MaxWidthWrapper className="px-2 sm:px-4 md:px-0 overflow-auto  py-10 ">
         <div className="grid grid-cols-1 lg:grid-cols-2  lg:gap-8 place-items-center space-y-6">
           <div className="flex flex-col space-y-6 sm:space-y-10 lg:items-center text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto">
             <Motion direction="left">
               <h1 className=" font-normal leading-tight text-teal-950  text-4xl sm:text-5xl lg:text-6xl">
-                Hire with Confidence, Find Your Dream Team
+                About CollageKaLadka
               </h1>
             </Motion>
             <Motion direction="left">
               <p className=" flex text-gray-700  tracking-tight md:font-normal max-w-xl mx-auto lg:max-w-none">
-                Sunt et sint sunt est dolore enim culpa Lorem in et ad. Labore
-                labore enim ipsum culpa ad. Qui sint ea irure velit elit eiusmod
-                dolor. Sunt Lorem incididunt ullamco sit aute anim enim sint
-                consequat.
+              College ka Ladka is your go-to creative agency, specializing in video editing, graphic design, and content creation. We turn ideas into visual stories that resonate. Whether it's a social media campaign or a full-scale production, our team of young, dynamic professionals ensures your brand stands out in the digital world.
               </p>
             </Motion>{" "}
             <div className="flex flex-row items-center justify-center lg:justify-start gap-4 w-full">
@@ -223,10 +221,10 @@ export default function EJobifyLandingPage() {
                   bg
                   href="/get-started"
                   className={
-                    "bg-[#36787a]  transition-all hover:bg-[#245153] rounded-md    px-10 py-4 flex text-wrap"
+                    "bg-[#ff6400]  transition-all hover:bg-[#292d39] rounded-md    px-10 py-4 flex text-wrap"
                   }
                 >
-                  Get Started
+                  Book A Call
                 </Button>
               </Motion>
               <Motion direction="left">
@@ -245,7 +243,7 @@ export default function EJobifyLandingPage() {
             <Motion direction="right">
               <div className="w-full lg:w-[35rem] h-[35rem] mx-auto  rounded-3xl overflow-clip  z-30">
                 <img
-                  src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={aboutimg2}
                   alt="buildind plan image"
                   width={300}
                   className="w-full h-full object-cover z-30"

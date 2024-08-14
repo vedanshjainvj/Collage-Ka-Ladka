@@ -8,6 +8,7 @@ import team07 from '../assets/team07.png'
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Motion } from "../components/Motion";
 
 
 
@@ -22,7 +23,8 @@ const OurTeam = () => {
           <p class="font-light text-gray-600 mb-20 lg:mb-16  sm:text-xl ">Meet our dedicated team, a group of passionate professionals committed to driving innovation and excellence. Together, we bring diverse skills and creativity to deliver outstanding results for our clients.</p>
       </div> 
       <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 ">
-          <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
+      <Motion direction="left">
+      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
               <a href="" className='flex p-2 md:p-0 justify-center'>
                   <img class=" rounded-lg sm:rounded-none sm:rounded-l-lg" src={team05} alt="Ankit Sahu"/>
               </a>
@@ -53,7 +55,10 @@ const OurTeam = () => {
                   </ul>
               </div>
           </div> 
-          <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
+      </Motion>
+
+      <Motion direction="right">
+      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
           <a href="" className='flex p-2 md:p-0 justify-center'>
           <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" src={team02} alt="Jese Avatar"/>
               </a>
@@ -84,7 +89,10 @@ const OurTeam = () => {
                   </ul>
               </div>
           </div> 
-          <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
+      </Motion>
+          
+      <Motion direction="left">
+      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
           <a href="" className='flex p-2 md:p-0 justify-center'>
           <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" src={team07} alt="Michael Avatar"/>
               </a>
@@ -115,7 +123,9 @@ const OurTeam = () => {
                   </ul>
               </div>
           </div> 
-          <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
+      </Motion>
+      <Motion direction="right">
+      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
           <a href="" className='flex p-2 md:p-0 justify-center'>
           <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" src={team04} alt="Sofia Avatar"/>
               </a>
@@ -146,9 +156,12 @@ const OurTeam = () => {
                   </ul>
               </div>
           </div>  
+      </Motion>
+          
       </div>  
   </div>
 </section>
+<div className='h-20'></div>
 </MaxWidthWrapper>  
    </>
   )

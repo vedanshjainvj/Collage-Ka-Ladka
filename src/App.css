@@ -10,3 +10,19 @@
   background: #605c5c;
   border-radius: 4px;
 }
+.animated-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 2rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+  transition: color 1s ease;
+}
+
+.animated-text:hover {
+  color: black;
+}
