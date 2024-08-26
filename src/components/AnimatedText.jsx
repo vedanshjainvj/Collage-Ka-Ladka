@@ -12,19 +12,19 @@ import aboutimg from "../assets/aboutimg.jpg";
 
 const SmoothScrollHero = () => {
   return (
-    <div className="bg-zinc-950">
+    <div className="bg-none bg-transparent">
       <ReactLenis
         root
         options={{
           // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
-          lerp: 0.05,
+          lerp: 0.09,
           //   infinite: true,
           //   syncTouch: true,
         }}
       >
-        <Nav />
+        {/* <Nav /> */}
         <Hero />
-        <Schedule />
+        {/* <Schedule /> */}
       </ReactLenis>
     </div>
   );
@@ -52,16 +52,8 @@ const SECTION_HEIGHT = 1500;
 
 const Hero = () => {
   return (
-    <div
-      style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
-      className="relative w-full"
-    >
-      <CenterImage />
-
-      <ParallaxImages />
-
-      <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
-    </div>
+    <div className="h-1"></div>
+     
   );
 };
 
@@ -102,36 +94,9 @@ const CenterImage = () => {
 
 const ParallaxImages = () => {
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-[200px]">
-      <ParallaxImg
-        src={aboutimg}
-        alt="And example of a space launch"
-        start={-200}
-        end={200}
-        className="w-1/3"
-      />
-      <ParallaxImg
-        src="https://www.screenskills.com/media/6971/script_editor.png?width=560&mode=crop&scale=both&center=0,0"
-        alt="An example of a space launch"
-        start={200}
-        end={-250}
-        className="mx-auto w-2/3"
-      />
-      <ParallaxImg
-        src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Orbiting satellite"
-        start={-200}
-        end={200}
-        className="ml-auto w-1/3"
-      />
-      <ParallaxImg
-        src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Orbiting satellite"
-        start={0}
-        end={-500}
-        className="ml-24 w-5/12"
-      />
-    </div>
+    <>
+    <div className="h-2"></div>
+    </>
   );
 };
 

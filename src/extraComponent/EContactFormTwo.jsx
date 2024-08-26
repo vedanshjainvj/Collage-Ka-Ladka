@@ -11,7 +11,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 const EContactFormTwo = () => {
   return (
     <MaxWidthWrapper className="py-16 px-0 overflow-auto">
-      <div className="mx-auto max-w-screen-xl p-8 sm:px-6 lg:px-8 lg:pr-32 bg-[#292d39] rounded-xl border-[1.6px] border-zinc-300/10">
+      <div className="mx-auto max-w-screen-xl p-8 sm:px-6 lg:px-8 lg:pr-32  rounded-xl border-[1.6px] border-zinc-300/10">
         <div className="grid grid-cols-1 gap-x-16 gap-y-12 lg:grid-cols-5">
           {/* Contact Form */}
           <div className="rounded-lg p-4 lg:col-span-3 lg:p-12">
@@ -23,7 +23,7 @@ const EContactFormTwo = () => {
                       Your Name
                     </label>
                     <input
-                      className="w-full bg-[#292d39] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-600"
+                      className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Your Name"
                       type="text"
                       id="name"
@@ -34,7 +34,7 @@ const EContactFormTwo = () => {
                       Project Type
                     </label>
                     <input
-                      className="w-full bg-[#292d39] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-600"
+                      className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Project Type"
                       type="text"
                       id="text"
@@ -50,7 +50,7 @@ const EContactFormTwo = () => {
                       Email
                     </label>
                     <input
-                      className="w-full bg-[#292d39] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-600"
+                      className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Email"
                       type="email"
                       id="email"
@@ -61,7 +61,7 @@ const EContactFormTwo = () => {
                       Phone
                     </label>
                     <input
-                      className="w-full bg-[#292d39] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-600"
+                      className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Phone"
                       type="text"
                       id="phone"
@@ -76,7 +76,7 @@ const EContactFormTwo = () => {
                     Message
                   </label>
                   <textarea
-                    className="w-full bg-[#292d39] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-600"
+                    className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                     placeholder="Tell us about your project"
                     rows="8"
                     id="message"
@@ -101,12 +101,12 @@ const EContactFormTwo = () => {
           {/* Contact Information */}
           <div className="w-full flex-1 lg:col-span-2 lg:py-12">
             <Motion direction="right">
-              <div className="inline-flex items-center justify-center py-1 transition ease-out text-[#61cfab] hover:duration-300 mb-3 uppercase tracking-wide">
+              <div className="inline-flex items-center justify-center py-1 transition ease-out text-orange-500 hover:duration-300 mb-3 uppercase tracking-wide">
                 <span className="text-xl tracking-wider">Get In Touch</span>
               </div>
             </Motion>
             <Motion direction="right">
-              <H3 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4 text-zinc-300">
+              <H3 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4 text-primary">
                 Let's discuss your next big project
               </H3>
             </Motion>
@@ -125,10 +125,10 @@ const EContactFormTwo = () => {
                     <LuMail className="text-zinc-200" size={24} />
                   </span>
                   <div>
-                    <H4 className="text-lg font-bold text-zinc-200 tracking-tight sm:text-xl mb-1">
+                    <H4 className="text-lg font-bold text-primary tracking-tight sm:text-xl mb-1">
                       Our Email
                     </H4>
-                    <P className="text-zinc-400 md:text-base">contact@  collagekaladka.com</P>
+                    <P className="text-zinc-600 md:text-base">contact@  collagekaladka.com</P>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -136,10 +136,10 @@ const EContactFormTwo = () => {
                     <Phone className="text-zinc-200 rotate-90" size={24} />
                   </span>
                   <div>
-                    <H4 className="text-lg font-bold text-zinc-200 tracking-tight sm:text-xl mb-1">
+                    <H4 className="text-lg font-bold text-primary tracking-tight sm:text-xl mb-1">
                       Our Phone
                     </H4>
-                    <P className="text-zinc-400 md:text-base">
+                    <P className="text-zinc-600 md:text-base">
                       (+91) 9713385080
                     </P>
                   </div>

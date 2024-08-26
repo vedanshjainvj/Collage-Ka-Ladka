@@ -13,6 +13,7 @@ import Badge from "../components/Badge";
 import BlogCard from "../components/BlogCard";
 import Button from "../components/Button";
 import Card from "../components/Card";
+import ScrollTextAnimation from "../components/Text";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { Motion } from "../components/Motion";
 import NumCard from "../components/NumCard";
@@ -181,7 +182,7 @@ const Home = () => {
 
 
       <EAccordian></EAccordian>
-
+      <ScrollTextAnimation></ScrollTextAnimation>
       {/* <MaxWidthWrapper className="pt-[5rem] pb-6 ">
         <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
           <div className="p-1 sm:p-6">
@@ -284,7 +285,7 @@ const Home = () => {
   </MaxWidthWrapper>
 </MaxWidthWrapper>
 
-{/* <AnimatedText></AnimatedText> */}
+<AnimatedText></AnimatedText>
 
 
 
@@ -489,7 +490,8 @@ const Home = () => {
 </MaxWidthWrapper>
 
       <EBigIdea></EBigIdea>
-      <EContactFormTwo></EContactFormTwo>
+     
+    
 
       {/* <MaxWidthWrapper className="max-w-full w-full  py-4 pt-20  lg:pt-28 pb-8">
         <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
