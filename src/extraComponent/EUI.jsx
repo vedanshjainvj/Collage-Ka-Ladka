@@ -43,9 +43,11 @@ const ServicesSection = () => {
                 Starting at 999.<span className="text-2xl text-zinc-600">00</span>
               </div>
               <div className="flex mx-auto items-center justify-center md:justify-start gap-4 mt-4">
-                <Button
+                <Button onClick={() => {
+                  window.scrollTo(0,0);
+                }}
                   bg
-                  href="/get-started"
+                  href="/services"
                   className={
                     "bg-zinc-900 transition-all hover:bg-zinc-950 rounded-full px-10 py-4 flex text-wrap"
                   }
@@ -61,10 +63,10 @@ const ServicesSection = () => {
 
         <div className="relative w-full lg:w-[24rem] h-auto lg:h-[35rem] mx-auto rounded-3xl overflow-clip z-40">
           <img
-            src="https://www.kindpng.com/picc/m/108-1082179_startup-rocket-png-transparent-png.png"
+            src="https://aster.cloud/wp-content/uploads/2021/03/editvideo.gif"
             alt="service image"
             width={300}
-            className="w-full h-full object-contain"
+            className="w-full h-full rounded-xl object-conver"
           />
         </div>
 

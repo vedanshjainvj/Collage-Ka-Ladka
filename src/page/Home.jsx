@@ -489,7 +489,7 @@ const Home = () => {
   </div>
 </MaxWidthWrapper>
 
-      <EBigIdea></EBigIdea>
+     
      
     
 

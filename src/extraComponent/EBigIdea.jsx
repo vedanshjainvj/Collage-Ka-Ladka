@@ -6,6 +6,13 @@ import { H2 } from "./typographyh2";
 import { P } from "./typographypara";
 import Button from "./Button";
 import AvatarCircles from "./Avatar";
+import {
+  ArrowRight,
+  CheckCircle,
+  CheckIcon,
+  Circle,
+  PlayCircle,
+} from "lucide-react";
 
 const EBigIdea = () => {
   return (
@@ -30,22 +37,21 @@ const EBigIdea = () => {
           </P>
           <div className="flex items-center justify-start">
             <>
-              <AvatarCircles
-                avatarUrls={[
-                  "https://i.pravatar.cc/300?img=1",
-                  "https://i.pravatar.cc/300?img=2",
-                  "https://i.pravatar.cc/300?img=3",
-                  "https://i.pravatar.cc/300?img=4",
-                ]}
-              />
+              
             </>
             <div className="px-4 grid place-items-start">
-              <span className="text-base text-balance font-medium text-zinc-800">
-                Your Creative
-              </span>
-              <span className="text-base text-balance font-medium text-zinc-800">
-                Success Team
-              </span>
+            <Button onClick={() => {
+                  window.scrollTo(0,0);
+                }}
+                      bg
+                      href="/contact"
+                      className={
+                        "bg-[#292d39]  hover:-translate-y-2 transition-all hover:bg-[#ff6400] rounded-full py-4"
+                      }
+                      icon={<ArrowRight size={16} />}
+                    >
+                      Contact Now !
+                    </Button>
             </div>
           </div>
         </Motion>
@@ -53,7 +59,7 @@ const EBigIdea = () => {
       <Motion direction="right">
         <div className="w-full lg:w-[28rem] h-[26rem] mx-auto rounded-3xl overflow-clip z-30">
           <img
-            src="https://www.adobe.com/express/learn/blog/media_1133fb79adfb961be8d74e0144d5f58428c87aa36.png?width=1200&format=pjpg&optimize=medium"
+            src="https://png.pngtree.com/png-clipart/20220911/original/pngtree-shining-bright-light-bulb-png-image_8539561.png"
             alt="creative workspace image"
             width={300}
             className="w-full h-full object-cover rounded-xl z-30"

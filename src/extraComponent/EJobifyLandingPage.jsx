@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Motion } from "./Motion";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Button from "./Button";
-import aboutimg2 from '../assets/aboutimg3.png'
+import aboutimg2 from '../assets/hero2.png'
 import {
   Sheet,
   SheetContent,
@@ -211,7 +211,7 @@ export default function EJobifyLandingPage() {
               </h1>
             </Motion>
             <Motion direction="left">
-              <p className=" flex text-gray-700  tracking-tight md:font-normal max-w-xl mx-auto lg:max-w-none">
+              <p className=" flex text-gray-600  tracking-tight font-thin max-w-xl mx-auto lg:max-w-none">
               College ka Ladka is your go-to creative agency, specializing in video editing, graphic design, and content creation. We turn ideas into visual stories that resonate. Whether it's a social media campaign or a full-scale production, our team of young, dynamic professionals ensures your brand stands out in the digital world.
               </p>
             </Motion>{" "}

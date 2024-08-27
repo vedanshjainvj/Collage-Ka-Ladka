@@ -10,7 +10,6 @@ import "./assets/font/PolySans-Slim.woff2";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ExtraComponent from "./page/ExtraComponent";
-
 const App = () => {
   return (
     <>
