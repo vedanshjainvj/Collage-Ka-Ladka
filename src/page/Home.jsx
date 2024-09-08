@@ -208,7 +208,7 @@ const Home = () => {
           <img
             className="w-auto lg:w-full h-[28rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg "
             src={aboutusimg}
-            alt="Collage ka Ladka Team"
+            alt="Collage ka Ladka Team Here"
           />
   
       </div>
