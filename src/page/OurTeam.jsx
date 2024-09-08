@@ -189,7 +189,7 @@ const OurTeam = () => {
                 <FaLinkedin className='size-6'/>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/ankitsahu454?utm_source=qr&igsh=eHgwaTdhaDRueXRh" target='blank'
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                   <FaInstagram className='size-6'/>
@@ -223,7 +223,7 @@ const OurTeam = () => {
                 <FaLinkedin className='size-6'/>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/deepak9_?igsh=MTQ2ZTZweHB3emNocA==" target='blank'
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                   <FaInstagram className='size-6'/>
@@ -242,7 +242,7 @@ const OurTeam = () => {
           <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
             <img
               className="absolute object-cover w-full h-full rounded"
-              src={t4}
+              src={t3}
               alt="Person"
             />
           </div>
@@ -257,7 +257,7 @@ const OurTeam = () => {
                 <FaLinkedin className='size-6'/>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/franzofit?igsh=dWxpOWIzbnJqajV3" target='blank'
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                   <FaInstagram className='size-6'/>
@@ -277,7 +277,7 @@ const OurTeam = () => {
           <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
             <img
               className="absolute object-cover w-full h-full rounded"
-              src={t3}
+              src={t4}
               alt="Person"
             />
           </div>
@@ -292,7 +292,7 @@ const OurTeam = () => {
                 <FaLinkedin className='size-6'/>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/ayushijain0206?igsh=djd6ZnhtN3Ayajls" target='blank'
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                   <FaInstagram className='size-6'/>

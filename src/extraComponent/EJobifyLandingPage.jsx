@@ -213,7 +213,7 @@ export default function EJobifyLandingPage() {
             </Motion>
             <Motion direction="left">
               <p className=" flex text-gray-600  tracking-tight font-thin max-w-xl mx-auto lg:max-w-none">
-              College ka Ladka is your go-to creative agency, specializing in video editing, graphic design, and content creation. We turn ideas into visual stories that resonate. Whether it's a social media campaign or a full-scale production, our team of young, dynamic professionals ensures your brand stands out in the digital world.
+              At CollegeKaLadka Editing Agency, we blend precision with creativity, ensuring that every project is delivered on time without compromising on quality. We believe in delivering value, focusing on excellence over quantity. Our services are flexible, designed to meet the unique needs of every client, with a commitment to customer satisfaction at the heart of everything we do. We collaborate with loyal, trusted partners to bring your vision to life. With us, you're not just getting an editing service; you're gaining a dedicated team that’s passionate about making your content shine.
               </p>
             </Motion>{" "}
             <div className="flex flex-row items-center justify-center lg:justify-start gap-4 w-full">
@@ -229,13 +229,7 @@ export default function EJobifyLandingPage() {
                 </Button>
               </Motion>
               <Motion direction="left">
-                <Button
-                  variant={"link"}
-                  href="/get-started"
-                  className={"text-wrap"}
-                >
-                  Book a call
-                </Button>
+                
               </Motion>
             </div>{" "}
           </div>
