@@ -120,89 +120,92 @@ const Header = () => {
           </div>
         </div>
         <SheetContent
-          side="left"
-          // close={handleMenu}
-          className="bg-zinc-50  w-full h-full p-3 pt-8"
-        >
-          <SheetHeader>
-            <SheetTitle>
-              {" "}
-              <Link to={"/"} onClick={() => setIsOpen(false)}>
-                <img
-                  src={mylogo}
-                  className="mx-auto h-6 w-auto object-cover"
-                  alt="collagekaladka "
-                />
-              </Link>
-            </SheetTitle>
-          </SheetHeader>
-          <div className="flex  flex-col h-full  ">
-            <nav className="flex-1 mt-6 grid gap-y-4 pt-4 ">
-              {menuOptions.map((option) => (
-                <div key={option.path}>
-                  <div
-                    onClick={() => handleMenuClick(option)}
-                    className={`flex items-center justify-between rounded-md p-1 py-2 pb-3 px-2 text-sm font-semibold ${
-                      option.path === location.pathname
-                        ? "text-[#ff6400] underline underline-offset-8 font-bold"
-                        : "text-zinc-800"
-                    } hover:bg-zinc-200`}
-                  >
-                    <span className="ml-3 text-base font-normal">
-                      {option.title}
-                    </span>
-                    {option.submenu ? (
-                      <BiChevronDown
-                        className={`h-4 w-4 transition-transform ${
-                          expandedMenu === option.title ? "rotate-180" : ""
-                        }`}
-                      />
-                    ) : (
-                      <BiChevronRight className="h-4 w-4" />
-                    )}
-                  </div>
-                  {option.submenu && expandedMenu === option.title && (
-                    <div className="ml-6 mt-2 space-y-2">
-                      {option.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.path}
-                          to={subItem.path}
-                          onClick={() => setIsOpen(false)}
-                          className="block p-2 text-sm text-gray-600 hover:text-[#ff6400] hover:bg-zinc-200 rounded-md"
-                        >
-                          {subItem.title}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </nav>
-
-            <div className="mt-3 space-y-2">
-              <div className="space-y-1 w-full">
-                <Link to={"/auth?mode=signup"} onClick={() => setIsOpen(false)}>
-                  <button
-                    type="button"
-                    className="w-full rounded-md border border-[#ff6400] px-3 py-[0.5rem] text-sm font-semibold text-[#ff6400] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff6400]"
-                  >
-                    Sign Up
-                  </button>
-                </Link>
-              </div>
-              <div className="space-y-1 w-full">
-                <Link to={"/auth?mode=login"} onClick={() => setIsOpen(false)}>
-                  <button
-                    type="button"
-                    className="w-full rounded-md bg-[#ff6400] px-3 py-[0.5rem] text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff6400]"
-                  >
-                    Log In
-                  </button>
-                </Link>
-              </div>
-            </div>
+  side="left"
+  className="bg-zinc-50  w-full h-full p-3 pt-8"
+>
+  <SheetHeader>
+    <SheetTitle>
+      <Link to={"/"} onClick={() => setIsOpen(false)}>
+        <img
+          src={mylogo}
+          className="mx-auto h-6 w-auto object-cover"
+          alt="collagekaladka"
+        />
+      </Link>
+    </SheetTitle>
+  </SheetHeader>
+  <div className="flex flex-col h-full">
+    <nav className="flex-1 mt-6 grid gap-y-4 pt-4">
+      {menuOptions.map((option) => (
+        <div key={option.path}>
+          <div
+            onClick={() => handleMenuClick(option)}
+            className={`flex items-center justify-between rounded-md p-1 py-2 pb-3 px-2 text-sm font-semibold ${
+              option.path === location.pathname
+                ? "text-[#ff6400] underline underline-offset-8 font-bold"
+                : "text-zinc-800"
+            } hover:bg-zinc-200`}
+          >
+            <Link
+              to={option.submenu ? null : option.path}
+              onClick={() => setIsOpen(false)} // Ensure the menu closes after clicking a link
+              className="ml-3 text-base font-normal"
+            >
+              {option.title}
+            </Link>
+            {option.submenu ? (
+              <BiChevronDown
+                className={`h-4 w-4 transition-transform ${
+                  expandedMenu === option.title ? "rotate-180" : ""
+                }`}
+              />
+            ) : (
+              <BiChevronRight className="h-4 w-4" />
+            )}
           </div>
-        </SheetContent>
+          {option.submenu && expandedMenu === option.title && (
+            <div className="ml-6 mt-2 space-y-2">
+              {option.submenu.map((subItem) => (
+                <Link
+                  key={subItem.path}
+                  to={subItem.path}
+                  onClick={() => setIsOpen(false)} // Close the menu after clicking a submenu item
+                  className="block p-2 text-sm text-gray-600 hover:text-[#ff6400] hover:bg-zinc-200 rounded-md"
+                >
+                  {subItem.title}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </nav>
+
+    <div className="mt-3 space-y-2">
+      <div className="space-y-1 w-full">
+        <Link to={"/auth?mode=signup"} onClick={() => setIsOpen(false)}>
+          <button
+            type="button"
+            className="w-full rounded-md border border-[#ff6400] px-3 py-[0.5rem] text-sm font-semibold text-[#ff6400] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff6400]"
+          >
+            Sign Up
+          </button>
+        </Link>
+      </div>
+      <div className="space-y-1 w-full">
+        <Link to={"/auth?mode=login"} onClick={() => setIsOpen(false)}>
+          <button
+            type="button"
+            className="w-full rounded-md bg-[#ff6400] px-3 py-[0.5rem] text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff6400]"
+          >
+            Log In
+          </button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</SheetContent>
+
       </Sheet>
     </div>
   );

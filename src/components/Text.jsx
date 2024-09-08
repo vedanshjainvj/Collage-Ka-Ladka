@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
-import MaxWidthWrapper from './MaxWidthWrapper';
 
 const ScrollTextAnimation = () => {
   const ref = useRef(null);
@@ -11,7 +10,7 @@ const ScrollTextAnimation = () => {
   useEffect(() => {
     const updatePosition = () => {
       const rect = ref.current.getBoundingClientRect();
-      setElementTop(rect.top + window.scrollY || window.pageYOffset); 
+      setElementTop(rect.top + window.scrollY || window.pageYOffset);
       setElementHeight(rect.height);
     };
 
@@ -33,56 +32,36 @@ const ScrollTextAnimation = () => {
     ['140%', '-50%']
   );
 
-
   return (
-
-        <section
+    <section
       ref={ref}
-      style={{
-        position: 'relative',
-        height: '60vh', 
-      
-        overflow: 'hidden', 
-        backgroundColor: '#fbfbfb',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
+      className="hidden md:flex relative h-[60vh] overflow-hidden bg-[#fbfbfb] items-center justify-center"
     >
+      {/* Left-moving text */}
       <motion.div
-      
+        className="absolute top-1/3 text-[8rem] font-bold text-black"
         style={{
           x: xLeft,
-          fontSize: '8rem',
-          fontWeight: 'bold',
-          color: '#000',
-          position: 'absolute',
-          top: '30%',
-      
         }}
       >
-         <span className="hollow-text" data-text="BRANDING EDITING"> <span className='text-[#181818]'>BRANDING 
-            </span> EDITING</span>
+        <span className="hollow-text" data-text="BRANDING EDITING">
+          <span className="text-[#181818]">BRANDING</span> EDITING
+        </span>
       </motion.div>
-      
+
+      {/* Right-moving text */}
       <motion.div
-   
+        className="absolute top-1/2 text-[8rem] font-bold text-black"
         style={{
           x: xRight,
-          fontSize: '8rem',
-          fontWeight: 'bold',
-          color: '#000',
-          position: 'absolute',
-          top: '40%',
         }}
       >
-        <div className='h-20'></div>
-       
-       <span className="hollow-text" data-text="EDITING BRANDING">EDITING <span className='text-[#181818]'>BRANDING</span></span>
+        <div className="h-20"></div>
+        <span className="hollow-text" data-text="EDITING BRANDING">
+          EDITING <span className="text-[#181818]">BRANDING</span>
+        </span>
       </motion.div>
     </section>
-
-    
   );
 };
 

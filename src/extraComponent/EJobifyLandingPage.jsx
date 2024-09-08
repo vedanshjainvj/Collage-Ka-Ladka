@@ -6,6 +6,7 @@ import { Motion } from "./Motion";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Button from "./Button";
 import aboutimg2 from '../assets/hero2.png'
+import ankitsahu from '../assets/ankitsahu.png'
 import {
   Sheet,
   SheetContent,
@@ -15,7 +16,7 @@ import {
 } from "./Sheet";
 import { H3 } from "./typographyh3";
 import { colorTheme } from "./colorTheme.js";
-
+import heroimg from '../assets/hero-img.png'
 const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
@@ -243,10 +244,10 @@ export default function EJobifyLandingPage() {
             <Motion direction="right">
               <div className="w-full lg:w-[35rem] h-[35rem] mx-auto  rounded-3xl overflow-clip  z-30">
                 <img
-                  src={aboutimg2}
+                  src={ankitsahu}
                   alt="buildind plan image"
                   width={300}
-                  className="w-full h-full object-contain md:object-cover z-30"
+                  className="w-full h-full object-contain md:object-contain z-30"
                 />
               </div>
             </Motion>

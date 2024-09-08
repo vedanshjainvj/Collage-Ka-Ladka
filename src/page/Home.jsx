@@ -8,6 +8,7 @@ import {
 import React from "react";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
+import aboutusimg from "../assets/aboutusimg.png";
 import AvatarCircles from "../components/Avatar";
 import Badge from "../components/Badge";
 import BlogCard from "../components/BlogCard";
@@ -25,6 +26,7 @@ import { H4 } from "../components/typographyh4";
 import { InlineCode } from "../components/typographyInlineCode";
 import ankitsahu from "../assets/ankitsahu.png";
 import mylogo from "../assets/mylogo.png";
+import ckllogo from '../assets/ckllogo.png'
 import { P } from "../components/typographypara";
 import EUI from "../extraComponent/EUI";
 import {
@@ -41,6 +43,7 @@ import EBigIdea from "../extraComponent/EBigIdea";
 import EContactFormTwo from "../extraComponent/EContactFormTwo";
 import ankitimg from "../assets/ankitimg.png";
 import AnimatedText from "../components/AnimatedText";
+import heroimg from "../assets/hero-img.png";
 
 const Feature = ({
   title,
@@ -159,20 +162,15 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-8 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-              <div className="relative mx-auto w-full rounded-lg lg:max-w-md">
-                <Ripple
-                  mainCircleSize={240}
-                  numCircles={5}
-                  colors={["#FF8C00", "#FF4500"]}
-                  sectionOne
-                > 
+            <div className="mt-8 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex justify-center lg:items-center">
+              <div className="relative mx-auto w-full rounded-lg lg:max-w-md flex justify-center">
+               
                   <img
-                    className="w-auto lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 mb-14 rounded-lg bg-blend-multiply"
-                    src={ankitsahu}
+                    className="w-auto lg:w-full h-[20rem] sm:h-[40rem]  z-30 sm:mb-14 rounded-lg bg-blend-multiply"
+                    src={heroimg}
                     alt="ankit_sahu_hero"
                   />
-                </Ripple>
+            
               </div>
             </div>
           </div>
@@ -203,22 +201,16 @@ const Home = () => {
 
       
       <MaxWidthWrapper className="pt-5">
-  <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
+  <MaxWidthWrapper className="px-0 py-0 sm:pt-16 sm:px-0 md:px-0">
     <div className="grid grid-flow-dense items-center gap-x-12 gap-y-10 place-items-center lg:grid-cols-2 pb-8">
-      <div className="h-full my-10 w-full flex items-center justify-center">
-        <Ripple
-          mainCircleSize={525}
-          mainCircleOpacity={0}
-          numCircles={1}
-          colors={["#ffc29a"]}
-          sectionTwo
-        >
+      <div className="h-full  w-full flex items-center justify-center">
+        
           <img
-            className="w-auto lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg bg-blend-multiply"
-            src={ankitimg}
+            className="w-auto lg:w-full h-[28rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg "
+            src={aboutusimg}
             alt="Collage ka Ladka Team"
           />
-        </Ripple>
+  
       </div>
       <div className="space-y-4">
         <Motion direction="right">

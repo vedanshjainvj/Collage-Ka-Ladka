@@ -7,6 +7,7 @@ import { Motion } from "./Motion";
 import { H2 } from "./typographyh2";
 import { P } from "./typographypara";
 import { CirclePlus } from "lucide-react";
+import creativeimg from "../assets/creative-img.png";
 import {
   Accordion,
   AccordionContent,
@@ -16,7 +17,7 @@ import {
 
 const ServicesSection = () => {
   return (
-    <MaxWidthWrapper className="py-10 overflow-auto">
+    <MaxWidthWrapper className="py-20 sm:py-0  overflow-auto">
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div className="flex flex-col items-center justify-center space-y-5 lg:space-y-4">
           <Motion
@@ -63,7 +64,7 @@ const ServicesSection = () => {
 
         <div className="relative w-full lg:w-[24rem] h-auto lg:h-[35rem] mx-auto rounded-3xl overflow-clip z-40">
           <img
-            src="https://aster.cloud/wp-content/uploads/2021/03/editvideo.gif"
+            src={creativeimg}
             alt="service image"
             width={300}
             className="w-full h-full rounded-xl object-conver"
