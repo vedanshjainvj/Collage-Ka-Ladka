@@ -146,7 +146,7 @@ const Home = () => {
           <img
             className="w-full lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg mix-blend-multiply"
             src={aboutnik}
-            alt="Collage ka Ladka Team Here"
+            alt="College ka Ladka Team Here"
           />
   
       </div>
