@@ -55,7 +55,7 @@ const Services = () => {
                       {service.icon}
                     </div>
                     <div className="relative z-10 text-center">
-                      <h3 className="mt-8 text-lg font-medium text-gray-900">{service.title}</h3>
+                      <h3 className="mt-8 text-xl font-medium text-gray-900">{service.title}</h3>
                       <p className="mt-5 text-base text-gray-700">{service.description}</p>
                     </div>
                     <div className="absolute inset-0 bg-blue-200 transform origin-left scale-x-50 group-hover:scale-x-100 transition-transform duration-500 ease-in-out opacity-50"></div>

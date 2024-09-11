@@ -22,7 +22,7 @@
   top: 50%;
   transform: translateY(-50%);
   user-select: none;
-  transition: color 1s ease;
+  transition: color 2s ease;
 }
 
 .animated-text:hover {
@@ -62,23 +62,4 @@
   background-position: 0 0; /* Moves the background from right to left, filling the text */
   font-family: 'Integral';
 
-}
-
-/* Media query for medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  .hollow-text {
-    font-size: 4rem; /* Adjust font size for medium devices */
-    -webkit-text-stroke: 1.5px black; /* Adjust stroke width for medium devices */
-    display: hidden;
-    font-family: 'Integral';
-  }
-}
-
-/* Media query for small devices (phones, 480px and up) */
-@media (max-width: 480px) {
-  .hollow-text {
-    font-size: 2.5rem; /* Adjust font size for small devices */
-    -webkit-text-stroke: 1px black; /* Adjust stroke width for small devices */
-    display: hidden;
-  }
 }

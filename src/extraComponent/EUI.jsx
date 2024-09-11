@@ -7,13 +7,14 @@ import { Motion } from "./Motion";
 import { H2 } from "./typographyh2";
 import { P } from "./typographypara";
 import { CirclePlus } from "lucide-react";
-import creativeimg from "../assets/creative-img.png";
+import eui from "../assets/eui.png";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "./Accordion";
+import aboutved from '../assets/about-ved.png'
 
 const ServicesSection = () => {
   return (
@@ -64,10 +65,10 @@ const ServicesSection = () => {
 
         <div className="relative w-full lg:w-[24rem] h-auto lg:h-[35rem] mx-auto rounded-3xl overflow-clip z-40">
           <img
-            src={creativeimg}
+            src="https://digifixmedia.com/wp-content/uploads/2024/06/1-6.png"
             alt="service image"
             width={300}
-            className="w-full h-full rounded-xl object-conver"
+            className="w-full h-full mix-blend-multiply rounded-xl object-contain md:object-cover"
           />
         </div>
 

@@ -6,7 +6,9 @@ import {
   PlayCircle,
 } from "lucide-react";
 import React from "react";
+import aboutnik from "../assets/about-nik.jpg"
 import { BiSolidQuoteAltRight } from "react-icons/bi";
+import herovideobg from "../assets/hero-video-bg.png"
 import { twMerge } from "tailwind-merge";
 import aboutusimg from "../assets/aboutusimg.png";
 import AvatarCircles from "../components/Avatar";
@@ -29,6 +31,8 @@ import mylogo from "../assets/mylogo.png";
 import ckllogo from '../assets/ckllogo.png'
 import { P } from "../components/typographypara";
 import EUI from "../extraComponent/EUI";
+import herovideo from "../assets/hero-video.mp4"
+import Video from "../components/Video";
 import {
   aboutFeatures,
   features,
@@ -45,169 +49,103 @@ import ankitimg from "../assets/ankitimg.png";
 import AnimatedText from "../components/AnimatedText";
 import heroimg from "../assets/hero-img.png";
 
-const Feature = ({
-  title,
-  description,
-  icon,
-  highlight,
-  index,
-  total,
-  className,
-}) => {
-  const isFirst = index === 0;
-  const isLast = index === total - 1;
 
-  return (
-    <div
-      className={twMerge(
-        "flex flex-col items-center text-center p-2  transition-all duration-300 bg-[#28214c]   ",
-        highlight && "bg-[#ff6400] p-8 rounded-4xl",
-        className
-      )}
-    >
-      {highlight ? (
-        <div className="min-h-[18rem] flex flex-col items-center justify-center p-1 bg-[#ff6400] rounded-4xl">
-          {icon && <div className="p-3 rounded-full mb-2">{icon}</div>}
-          <H3 className="text-xl font-semibold text-white text-left ">
-            {title}
-          </H3>
-          <P className="text-gray-300">{description}</P>
-        </div>
-      ) : (
-        <div className="min-h-64 flex flex-col items-center justify-center py-6">
-          {icon && (
-            <div className="mb-2 sm:mb-4 p-3 mx-auto text-center ">{icon}</div>
-          )}
-          <H3 className="text-xl font-semibold   text-white text-left text-balance">
-            {title}
-          </H3>
-          <P className="text-gray-300 tracking-wide text-balance mx-auto">
-            {description}
-          </P>
-        </div>
-      )}
-    </div>
-  );
-};
 
 const Home = () => {
   const serviceOne = serviceFeatures.slice(0, 2);
   const serviceTwo = serviceFeatures.slice(2, 5);
+  
 
   return (
     <>
-      <MaxWidthWrapper className="md:pt-0 md:-my-10">
-        <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-8 place-items-center">
-            <div className="text-center -mt-20 md:max-w-2xl md:mx-auto lg:col-span-6  lg:text-left space-y-5">
-              <Motion direction="left">
-                <Badge className="inline-block uppercase tracking-wide">
-                  Collage Ka Ladka 
-                </Badge>
-              </Motion>
-              <H1 className="text-4xl text-center lg:text-left tracking-normal font-extrabold sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-                <span className="block text-zinc-900 xl:inline">
-                Transforming Your Ideas into Stunning Visuals
-                </span>
-              </H1>
-              <Motion direction="left">
-                <P className="mt-3 text-base font-medium   text-zinc-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Expert Video Editing, Content Creation, and Design Services Tailored to Your Needs
-                </P>
-              </Motion>
-
-              <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 my-auto mx-auto">
-                  <Motion direction="left">
-                    <Button
-                      bg
-                      href="/get-started"
-                      className={
-                        "bg-[#292d39]  hover:-translate-y-2 transition-all hover:bg-[#ff6400] rounded-full px-6 py-4"
-                      }
-                      icon={<ArrowRight size={16} />}
-                    >
-                      Get Started
-                    </Button>
-                  </Motion>
-                  <Motion direction="right">
-                    <Button
-                      border
-                      href="/watch-intro"
-                      // className={
-                      //   "bg-[#3d3568]  hover:-translate-y-2 transition-all hover:bg-[#ff6400] rounded-full px-6 py-4"
-                      // }
-                      className={" px-6 py-4"}
-                      icon={<PlayCircle size={16} />}
-                    >
-                      Watch Intro
-                    </Button>
-                  </Motion>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <AvatarCircles
-                    avatarUrls={[
-                      "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
-                   "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
-                "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
-                "https://yt3.googleusercontent.com/ytc/AIdro_nYp2zZ26e1TB3sAZbV6vTHK17BlQimxap8x46Sf4igSd8=s900-c-k-c0x00ffffff-no-rj",
-                    ]}
-                    // numPeople={1000}
-                  />
-                  <span className="ml-3 text-sm font-medium text-zinc-600">
-                    115+ Satisfied Clients
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex justify-center lg:items-center">
-              <div className="relative mx-auto w-full rounded-lg lg:max-w-md flex justify-center">
-               
-                  <img
-                    className="w-auto lg:w-full h-[20rem] sm:h-[40rem]  z-30 sm:mb-14 rounded-lg bg-blend-multiply"
-                    src={heroimg}
-                    alt="ankit_sahu_hero"
-                  />
+     <MaxWidthWrapper className="md:pt-0 md:mb-10 py-0">
+  <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
+    <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center place-items-center">
+      {/* Left side content */}
+      <div className="text-center mb-10 md:mb-0 md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left space-y-5 flex flex-col justify-center h-full">
+        <Motion direction="left">
+          <Badge className="inline-block uppercase tracking-wide">
+            Collage Ka Ladka
+          </Badge>
+        </Motion>
+        <H1 className="text-4xl text-center lg:text-left tracking-normal font-extrabold sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+          <span className="block text-zinc-900 xl:inline">
+            Transforming Your Ideas into Stunning Visuals
+          </span>
+        </H1>
+        <Motion direction="left">
+          <P className="mt-3 text-base font-medium text-zinc-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+            Expert Video Editing, Content Creation, and Design Services Tailored
+            to Your Needs
+          </P>
+        </Motion>
+        <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <Motion direction="right">
+              <Button
+                border
+                href="/watch-intro"
+                className="px-6 py-4"
+                icon={<PlayCircle size={16} />}
+              >
+                Watch Intro
+              </Button>
+            </Motion>
+           
             
-              </div>
-            </div>
+            <div className="mt-6">
+          <div className="flex items-center justify-center lg:justify-start">
+            <AvatarCircles
+              avatarUrls={[
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9_pOtGguTfvWCRBEHYlOueBWgccNMvKN_A&s",
+                "https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833546.jpg",
+                "https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833562.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726012800&semt=ais_hybrid",
+                "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg",
+              ]}
+            />
+            <span className="ml-3 text-sm font-medium text-zinc-600">
+              15+ Satisfied Clients
+            </span>
           </div>
-        </MaxWidthWrapper>
-      </MaxWidthWrapper>
+        </div>
+      </div>
+      </div>
+      </div>
+          
+      
+      {/* Right side video */}
+      <div className="relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 flex justify-center items-center">
+        <div className="relative mx-auto w-full rounded-lg lg:max-w-md flex justify-center">
+          <video
+            controls
+            playsInline
+            className="md:max-w-xl h-auto rounded-lg aspect-video"
+            src={herovideo}
+            poster={herovideobg}
+            alt="ankit_sahu_hero"
+          />
+        </div>
+      </div>
+    </div>
+  </MaxWidthWrapper>
+</MaxWidthWrapper>
+
+
 
 
 
       <EAccordian></EAccordian>
-      <ScrollTextAnimation></ScrollTextAnimation>
-      {/* <MaxWidthWrapper className="pt-[5rem] pb-6 ">
-        <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
-          <div className="p-1 sm:p-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0   place-items-center bg-[#28214c]  rounded-4xl lg:bg-transparent p-4 sm:p-8 lg:p-0">
-              {features.map((feature, index) => (
-                <div key={index}>
-                  <Feature
-                    key={feature.title}
-                    {...feature}
-                    total={features.length}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </MaxWidthWrapper>
-      </MaxWidthWrapper> */}
-
+     
       
-      <MaxWidthWrapper className="pt-5">
-  <MaxWidthWrapper className="px-0 py-0 sm:pt-16 sm:px-0 md:px-0">
+      
+      
+  <MaxWidthWrapper className="px-6 py-0 sm:px-0 md:px-0 ">
     <div className="grid grid-flow-dense items-center gap-x-12 gap-y-10 place-items-center lg:grid-cols-2 pb-8">
       <div className="h-full  w-full flex items-center justify-center">
         
           <img
-            className="w-auto lg:w-full h-[28rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg "
-            src={aboutusimg}
+            className="w-full lg:w-full h-[20rem] sm:h-[36rem] lg:h-auto z-30 -mb-2 md:mb-14 rounded-lg mix-blend-multiply"
+            src={aboutnik}
             alt="Collage ka Ladka Team Here"
           />
   
@@ -274,140 +212,20 @@ const Home = () => {
         </div>
       </div>
     </div>
-  </MaxWidthWrapper>
+ 
 </MaxWidthWrapper>
 
 <AnimatedText></AnimatedText>
-
+<ScrollTextAnimation></ScrollTextAnimation>
 
 
 <EUI></EUI>
+<Video />
 
 
 
-      {/* <MaxWidthWrapper className="max-w-full overflow-visible   py-4  bg-[url('../assets/placeholder.png')] bg-no-repeat bg-cover  bg-blend-multiply  h-[2600px] sm:h-[1550px] md:h-[1400px]  lg:h-[1000px] bg-[#1e193bfb] ">
-        <MaxWidthWrapper className="px-0 sm:px-0 md:px-0">
-          <div className="container w-full mx-auto gap-x-12  lg:grid-cols-2 ">
-            <div className="w-full flex flex-col items-center justify-center mx-auto sm:text-center space-y-4 ">
-              <Motion direction="up">
-                <Badge className="inline-block uppercase tracking-wide">
-                  Our Services
-                </Badge>
-              </Motion>
-              <H1 className="text-zinc-100 text-3xl font-bold tracking-tight sm:text-4xl">
-                We Provide The Best Service For You
-              </H1>
-              <P className="max-w-prose text-zinc-400 md:text-xl text-balance font-thin">
-                Empower your team to build and deploy faster with our
-                cutting-edge platform. Unlock new possibilities and
-                revolutionize your web presence.
-              </P>
-            </div>
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-x-4 gap-y-4 pt-12">
-              <Motion direction="left">
-                <div className="w-full relative group flex flex-col bg-white rounded-2xl overflow-hidden transition-all duration-300 ease-in-out z-10 min-h-[21.25rem]">
-                  <img
-                    src="./assets/likes-in-social-media.jpg"
-                    className="w-[27rem] h-[23.25rem] object-cover object-center"
-                    alt="Feature"
-                  />
-                  <div className="absolute inset-0 -z-10 bg-[#f6f6ff] w-1/2 group-hover:w-full transition-all duration-300 ease-in-out" />
-                </div>
-              </Motion>
-              {serviceOne.map((feature, index) => {
-                return (
-                  <Motion direction="left">
-                    <div
-                      key={index}
-                      className={`w-full min-h-[21.25rem] max-w-md relative group flex flex-col bg-white  rounded-2xl overflow-hidden transition-all duration-300 ease-in-out z-10 ${
-                        index % 2 === 0 ? "col-span-1" : ""
-                      } `}
-                    >
-                      <div
-                        className={`absolute inset-0 -z-10 b w-1/2 group-hover:w-full transition-all duration-300 ease-in-out ${
-                          feature.color ? "bg-[#ffe0cc]" : "bg-[#f6f6ff]"
-                        } `}
-                      />
-                      <div className="flex justify-start items-center p-6 h-1/2">
-                        <div className="text-white text-4xl pl-5 translate-y-4 group-hover:translate-y-2 transition-all duration-300 ease-in-out">
-                          {feature.icon}
-                        </div>
-                      </div>
-                      <div className="p-8 flex-1 flex flex-col justify-between">
-                        <div>
-                          <h3 className="text-xl font-semibold mb-2">
-                            {feature.title}
-                          </h3>
-                          <p className="text-gray-600 mb-4">
-                            {feature.description}
-                          </p>
-                        </div>
-                        <div className="flex items-center">
-                          <Button
-                            bg
-                            href={feature.href}
-                            className={
-                              "bg-[#3d3568]  hover:-translate-y-2 transition-all hover:bg-[#ff6400] rounded-full px-6 py-4"
-                            }
-                          >
-                            Read More
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </Motion>
-                );
-              })}
-              {serviceTwo.map((feature, index) => {
-                return (
-                  <Motion direction="right">
-                    <div
-                      key={index}
-                      className={`w-full min-h-[21.25rem] max-w-md relative group flex flex-col bg-white  rounded-2xl overflow-hidden transition-all duration-300 ease-in-out z-10 ${
-                        index % 2 === 0 ? "col-span-1" : ""
-                      } `}
-                    >
-                      <div
-                        className={`absolute inset-0 -z-10 b w-1/2 group-hover:w-full transition-all duration-300 ease-in-out ${
-                          feature.color ? "bg-[#ffe0cc]" : "bg-[#f6f6ff]"
-                        } `}
-                      />
-                      <div className="flex justify-start items-center p-6 h-1/2">
-                        <div className="text-white text-4xl pl-5 translate-y-4 group-hover:translate-y-2 transition-all duration-300 ease-in-out">
-                          {feature.icon}
-                        </div>
-                      </div>
-                      <div className="p-8 flex-1 flex flex-col justify-between">
-                        <div>
-                          <h3 className="text-xl font-semibold mb-2">
-                            {feature.title}
-                          </h3>
-                          <p className="text-gray-600 mb-4">
-                            {feature.description}
-                          </p>
-                        </div>
-                        <div className="flex items-center">
-                          <Button
-                            bg
-                            href={feature.href}
-                            className={
-                              "bg-[#3d3568]  hover:-translate-y-2 transition-all hover:bg-[#ff6400] rounded-full px-6 py-4"
-                            }
-                          >
-                            Read More
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </Motion>
-                );
-              })}
-            </div>
-          </div>
-        </MaxWidthWrapper>
-      </MaxWidthWrapper> */}
-
-      <GrowComponentHeroSection></GrowComponentHeroSection>
+      
+      {/* <GrowComponentHeroSection></GrowComponentHeroSection> */}
 
       <MaxWidthWrapper className="">
   <div className="w-full">

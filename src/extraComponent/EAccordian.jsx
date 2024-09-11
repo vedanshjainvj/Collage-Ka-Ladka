@@ -12,7 +12,7 @@ import { P } from "./typographypara";
 
 const EAccordian = () => {
   return (
-    <MaxWidthWrapper className="py-10 md:my-10 overflow-auto">
+    <MaxWidthWrapper className="py-10 md:mt-36 overflow-auto my-16">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center">
         <div className="max-w-prose flex flex-1 flex-col items-center justify-center space-y-5 lg:space-y-4">
           <Motion direction="left">

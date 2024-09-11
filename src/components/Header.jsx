@@ -5,6 +5,7 @@ import { FaPhone } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { colorTheme } from "./../constants/colorTheme";
 import Button from "../components/Button";
+import ckllogo2 from "../assets/ckllogo2.png"
 import {
   Sheet,
   SheetContent,
@@ -53,7 +54,7 @@ const Header = () => {
             <div className="text-xl font-semibold tracking-wide select-none">
               <Link to={"/"}>
                 <img
-                  src={mylogo}
+                  src={ckllogo2}
                   className="mx-auto h-6 w-auto object-cover"
                   alt="collagekaladka"
                 />

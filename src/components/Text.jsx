@@ -35,11 +35,11 @@ const ScrollTextAnimation = () => {
   return (
     <section
       ref={ref}
-      className="hidden md:flex relative h-[60vh] overflow-hidden bg-[#fbfbfb] items-center justify-center"
+      className="hidden md:flex relative h-[60vh] overflow-hidden items-center"
     >
-      {/* Left-moving text */}
+      <div className="">
       <motion.div
-        className="absolute top-1/3 text-[8rem] font-bold text-black"
+        className="absolute top-1/4 text-[8rem] font-bold text-black"
         style={{
           x: xLeft,
         }}
@@ -49,18 +49,21 @@ const ScrollTextAnimation = () => {
         </span>
       </motion.div>
 
-      {/* Right-moving text */}
+      
       <motion.div
-        className="absolute top-1/2 text-[8rem] font-bold text-black"
+        className="absolute top-2/4 text-[8rem] font-bold text-black"
         style={{
           x: xRight,
         }}
       >
-        <div className="h-20"></div>
+        {/* <div className="h-4"></div> */}
         <span className="hollow-text" data-text="EDITING BRANDING">
           EDITING <span className="text-[#181818]">BRANDING</span>
         </span>
       </motion.div>
+      </div>
+      
+      
     </section>
   );
 };

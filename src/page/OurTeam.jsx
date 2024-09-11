@@ -183,7 +183,7 @@ const OurTeam = () => {
             <p className="mb-5 text-xs text-gray-800">Founder & Head Consultant</p>
             <div className="flex items-center space-x-3 sm:justify-center">
               <a
-                href="/"
+                href="https://www.linkedin.com/in/collegekaladka-editing-agency-5a7b66204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                 <FaLinkedin className='size-6'/>
@@ -286,7 +286,7 @@ const OurTeam = () => {
             <p className="mb-5 text-xs text-gray-800">HR & Public Relations</p>
             <div className="flex items-center space-x-3 sm:justify-center">
             <a
-                href="/"
+                href="https://www.linkedin.com/in/ayushi-jain-85b44320a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                 <FaLinkedin className='size-6'/>
