@@ -5,7 +5,7 @@ import { HiMapPin } from "react-icons/hi2";
 import { ImLinkedin2 } from "react-icons/im";
 import { IoLogoInstagram, IoLogoTwitter, IoMail } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import mylogo2 from "../assets/mylogo2.png";
+import ckllogo2 from "../assets/ckllogo2.png";
 
 
 const Footer = () => {
@@ -17,11 +17,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 place-items-center">
           <div className="w-full bg-[#21232d] p-8 rounded-lg divide-y-[1px] divide-zinc-500/25">
             <Link to="/" className="block mb-6 ">
-              <img
-                src={mylogo2}
+              {/* <img
+                src={ckllogo2}
                 className="h-8 w-auto"
                 alt="mediaPro"
-              />
+              /> */}
+              <p className="text-white text-xl">College Ka Ladka</p>
             </Link>
             <div className="space-y-4 text-zinc-200 pt-4">
               <p className="flex items-center gap-3">
