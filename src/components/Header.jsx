@@ -22,9 +22,11 @@ const Header = () => {
 
   const menuOptions = [
     { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Projects", path: "/projects" },
     { title: "Services", path: "/services" },
+    { title: "Projects", path: "/projects" },
+    { title: "About", path: "/about" },
+    
+    
     {
       title: "Team",
       path: "/our-team",
