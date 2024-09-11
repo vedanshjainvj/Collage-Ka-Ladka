@@ -207,7 +207,7 @@ export default function EJobifyLandingPage() {
           <div className="flex flex-col space-y-6 sm:space-y-10 lg:items-center text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto">
             <Motion direction="left">
               <h1 className=" font-normal leading-tight text-teal-950  text-4xl sm:text-5xl lg:text-6xl">
-                About CollageKaLadka
+                About CollegeKaLadka
               </h1>
             </Motion>
             <Motion direction="left">

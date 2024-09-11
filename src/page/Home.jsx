@@ -65,7 +65,7 @@ const Home = () => {
       <div className="text-center mb-10 md:mb-0 md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left space-y-5 flex flex-col justify-center h-full">
         <Motion direction="left">
           <Badge className="inline-block uppercase tracking-wide">
-            Collage Ka Ladka
+            College Ka Ladka
           </Badge>
         </Motion>
         <H1 className="text-4xl text-center lg:text-left tracking-normal font-extrabold sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
@@ -153,14 +153,14 @@ const Home = () => {
       <div className="space-y-4">
         <Motion direction="right">
           <Badge className="inline-block uppercase tracking-wide">
-            About Collage ka Ladka
+            About College ka Ladka
           </Badge>
         </Motion>
         <H1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Crafting Visual Stories with Creativity & Passion
         </H1>
         <P className=" text-[#27272a]/80 md:text-xl text-balance">
-          At "Collage ka Ladka," we specialize in bringing your ideas to life
+          At "College ka Ladka," we specialize in bringing your ideas to life
           through exceptional video editing, content creation, and design
           services. 
         </P>

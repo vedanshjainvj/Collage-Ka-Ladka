@@ -223,7 +223,7 @@ const OurTeam = () => {
                 <FaLinkedin className='size-6'/>
               </a>
               <a
-                href="https://www.instagram.com/deepak9_?igsh=MTQ2ZTZweHB3emNocA==" target='blank'
+                href="https://www.instagram.com/deepak9_____/" target='blank'
                 className="text-gray-600 transition-colors duration-300 hover:text-blue-600"
               >
                   <FaInstagram className='size-6'/>
