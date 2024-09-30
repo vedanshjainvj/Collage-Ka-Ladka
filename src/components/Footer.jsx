@@ -7,7 +7,6 @@ import { IoLogoInstagram, IoLogoTwitter, IoMail } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import ckllogo2 from "../assets/ckllogo2.png";
 
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -17,11 +16,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 place-items-center">
           <div className="w-full bg-[#21232d] p-8 rounded-lg divide-y-[1px] divide-zinc-500/25">
             <Link to="/" className="block mb-6 ">
-              {/* <img
-                src={ckllogo2}
-                className="h-8 w-auto"
-                alt="mediaPro"
-              /> */}
               <p className="text-white text-xl">College Ka Ladka</p>
             </Link>
             <div className="space-y-4 text-zinc-200 pt-4">
@@ -45,19 +39,24 @@ const Footer = () => {
               Other Pages
             </h2>
             <ul className="space-y-2">
-              {["Home", "About Us", "Services", "Projects", "Contact"].map(
-                (item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <ChevronRight size={14} className="text-[#ff6400]" />
-                    <Link
-                      to="#"
-                      className="text-zinc-300 hover:text-[#ff6400] transition-colors duration-200"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
-              )}
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Projects", path: "/projects" },
+                { name: "Contact", path: "/contact" },
+              ].map(({ name, path }) => (
+                <li key={name} className="flex items-center gap-2">
+                  <ChevronRight size={14} className="text-[#ff6400]" />
+                  <Link
+                   onClick={() => window.scrollTo(0, 0)}
+                    to={path} // Use the path variable here
+                    className="text-zinc-300 hover:text-[#ff6400] transition-colors duration-200"
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -67,19 +66,19 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2">
               {[
-                "Privacy Policy",
-                "Terms Of Service",
-                "Disclaimer",
-                "Credits",
-                "FAQ",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2">
+                { name: "Privacy Policy", path: "/privacy" },
+                { name: "Terms Of Service", path: "/terms" },
+                { name: "Disclaimer", path: "/disclaimer" },
+                { name: "Credits", path: "/credits" },
+                { name: "FAQ", path: "/faq" },
+              ].map(({ name, path }) => (
+                <li key={name} className="flex items-center gap-2">
                   <ChevronRight size={14} className="text-[#ff6400]" />
-                  <Link
-                    to="#"
+                  <Link  onClick={() => window.scrollTo(0, 0)}
+                    to={path} // Use the path variable here
                     className="text-zinc-300 hover:text-[#ff6400] transition-colors duration-200"
                   >
-                    {item}
+                    {name}
                   </Link>
                 </li>
               ))}
@@ -114,6 +113,7 @@ const Footer = () => {
                   (Icon, index) => (
                     <Link
                       key={index}
+                     
                       to="#"
                       className="text-zinc-100 bg-[#ff6400] p-2 rounded-full hover:bg-[#28214c] transition-colors duration-200"
                     >
