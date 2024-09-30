@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'primereact/carousel';
 import MaxWidthWrapper from '../components/MaxWidthWrapper';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+
 
 // Importing videos
 import pp1 from '../assets/pp1.mp4';
@@ -18,6 +20,15 @@ const videos = [
   { id: 1, src: pp1 },
   { id: 2, src: pp2 },
   { id: 3, src: pp3 },
+];
+
+// Array of YouTube thumbnail URLs
+const youtubeThumbnails = [
+  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
+  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
+  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
+  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
+  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
 ];
 
 // Responsive options for different screen sizes
@@ -38,9 +49,21 @@ function Projects() {
   const videoTemplate = (video) => {
     return (
       <div className="border p-10 border-gray-100"> 
-        <video controls className="w-64 md:ml-0 object-cover rounded-lg shadow-md"> 
+        <video controls className=" md:ml-0 object-cover rounded-lg shadow-md"> 
           <source src={video.src} type="video/mp4" />
         </video>
+      </div>
+    );
+  };
+
+  const thumbnailTemplate = (thumbnail) => {
+    return (
+      <div className="border p-2">
+        <img
+          src={thumbnail}
+          alt="YouTube Thumbnail"
+          className="rounded-lg object-cover shadow-md"
+        />
       </div>
     );
   };
@@ -85,15 +108,62 @@ function Projects() {
             </div>
           </div>
         </section>
-        <div className="flex justify-center w-full py-10">
-       
-          <div className="my-carousel-container w-full max-w-[64rem]">
+        <h1 className="text-4xl text-center pt-10 md:text-5xl font-bold text-black">
+              Reels Creation  
+            </h1>
+        {/* Video Carousel */}
+        <div className="flex justify-center w-full py-4">
+          <div className="my-carousel-container w-full ">
             <Carousel
               value={videos}
               numVisible={3}
               numScroll={1}
               responsiveOptions={responsiveOptions}
               itemTemplate={videoTemplate}
+              circular
+              className="flex justify-center"
+            />
+          </div>
+        </div>
+
+    <section className="bg-gray-50 py-12 flex flex-col items-center justify-center">
+      <div className="flex justify-center space-x-6 mb-6">
+        {/* React icons for social media platforms */}
+        <FaFacebookF className="h-8 w-8 text-blue-600" />
+        <FaTwitter className="h-8 w-8 text-blue-400" />
+        <FaInstagram className="h-8 w-8 text-pink-600" />
+        <FaLinkedinIn className="h-8 w-8 text-blue-700" />
+        <FaYoutube className="h-8 w-8 text-red-600" />
+      </div>
+
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-4">
+        Manage Your Social Media Platforms with Ease
+      </h2>
+
+      <p className="text-gray-500 text-center max-w-xl mb-8 px-4">
+        We handle all your social media platforms and deliver all the content you
+        need, from video editing to graphics, ensuring your brand stays consistent
+        and engaging across all channels.
+      </p>
+
+      <button className="bg-orange-600 text-white py-3 px-8 rounded-lg hover:bg-black transition">
+        Get Started with Us
+      </button>
+    </section>
+
+
+        <h1 className="text-4xl text-center pt-10 md:text-5xl font-bold text-black">
+              Thumbnail Creation  
+            </h1>
+        {/* YouTube Thumbnails Carousel */}
+        <div className="flex justify-center w-full py-10">
+          <div className="my-carousel-container w-full ">
+            <Carousel
+              value={youtubeThumbnails}
+              numVisible={3}
+              numScroll={1}
+              responsiveOptions={responsiveOptions}
+              itemTemplate={thumbnailTemplate}
               circular
               className="flex justify-center"
             />
