@@ -15,151 +15,6 @@ const OurTeam = () => {
   return (
    <>
    <MaxWidthWrapper>
-   {/* <section class="">
-  <div class="py-0 sm:py-8 px-4 mx-auto max-w-screen-xl lg:py-0 lg:px-6 text-gray-800 ">
-      <div class="mx-auto  text-center mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-zinc ">Our Team</h2>
-          <p class="font-light text-gray-600 mb-20 lg:mb-16  sm:text-xl ">Meet our dedicated team, a group of passionate professionals committed to driving innovation and excellence. Together, we bring diverse skills and creativity to deliver outstanding results for our clients.</p>
-      </div> 
-      <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 ">
-      <Motion direction="left">
-      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
-              <a href="" className='flex p-2 md:p-0 justify-center'>
-                  <img class=" rounded-lg sm:rounded-none sm:rounded-l-lg" src={team05} alt="Ankit Sahu"/>
-              </a>
-              <div class="p-5">
-                  <h3 class="text-xl font-bold tracking-tight  text-zinc">
-                      <a href="#"> Ankit Sahu</a>
-                  </h3>
-                  <span class="text-gray-600">Founder and Head Consultant</span>
-                  <p class="mt-3 mb-4 font-light  ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, culpa.</p>
-                  <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                          <a href="#" className="text-xl">
-                          <FaLinkedin />
-
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaInstagram />
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaXTwitter />
-                          </a>
-                      </li>
-                      
-                  </ul>
-              </div>
-          </div> 
-      </Motion>
-
-      <Motion direction="right">
-      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
-          <a href="" className='flex p-2 md:p-0 justify-center'>
-          <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" src={team02} alt="Jese Avatar"/>
-              </a>
-              <div class="p-5">
-                  <h3 class="text-xl font-bold tracking-tight  text-zinc">
-                      <a href="#">Deepak Sahu</a>
-                  </h3>
-                  <span class="text-gray-700">Finance Manager</span>
-                  <p class="mt-3 mb-4 font-light  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, facilis!</p>
-                  <ul class="flex space-x-4 sm:mt-0">
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaLinkedin />
-
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaInstagram />
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaXTwitter />
-                          </a>
-                      </li>
-                      
-                  </ul>
-              </div>
-          </div> 
-      </Motion>
-          
-      <Motion direction="left">
-      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
-          <a href="" className='flex p-2 md:p-0 justify-center'>
-          <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" src={team07} alt="Michael Avatar"/>
-              </a>
-              <div class="p-5">
-                  <h3 class="text-xl font-bold tracking-tight  text-zinc">
-                      <a href="#">Veer Pratap</a>
-                  </h3>
-                  <span class=" ">Marketing & Sales Head</span>
-                  <p class="mt-3 mb-4 font-light  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, illo.</p>
-                  <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                          <a href="#" className="text-xl">
-                          <FaLinkedin />
-
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaInstagram />
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaXTwitter />
-                          </a>
-                      </li>
-                      
-                  </ul>
-              </div>
-          </div> 
-      </Motion>
-      <Motion direction="right">
-      <div class="items-center bg-blue-100 rounded-lg border border-gray-200 shadow-lg sm:flex ">
-          <a href="" className='flex p-2 md:p-0 justify-center'>
-          <img class="rounded-lg sm:rounded-none sm:rounded-l-lg" src={team04} alt="Sofia Avatar"/>
-              </a>
-              <div class="p-5">
-                  <h3 class="text-xl font-bold tracking-tight  text-zinc">
-                      <a href="#">Ayushi Jain</a>
-                  </h3>
-                  <span class=" ">HR & Public Relations</span>
-                  <p class="mt-3 mb-4 font-light  ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, molestias?</p>
-                  <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                          <a href="#" className="text-xl">
-                          <FaLinkedin />
-
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaInstagram />
-                          </a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-xl">
-                          <FaXTwitter />
-                          </a>
-                      </li>
-                      
-                  </ul>
-              </div>
-          </div>  
-      </Motion>
-          
-      </div>  
-  </div>
-</section> */}
 <div className="px-4  mx-auto sm:max-w-xl   md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0">
       <div className="mx-auto mb-10 lg:max-w-6xl sm:text-center">
         <p className="inline-block  mb-4 text-xl font-semibold tracking-wider text-teal-800 uppercase rounded-full bg-teal-accent-400">
@@ -169,8 +24,8 @@ const OurTeam = () => {
         Meet our dedicated team, a group of passionate professionals committed to driving innovation and excellence. Together, we bring diverse skills and creativity to deliver outstanding results for our clients.
         </p>
       </div>
-      <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
-        <div className='border hover:scale-105 duration-300	 sm:pb-4 sm:px-0 sm:py-0 shadow-md px-4 py-4'>
+      <div className="grid md:place-items-center gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-1 lg:max-w-screen-lg">
+        <div className='border hover:scale-105 duration-300	w-80 sm:pb-4 sm:px-0 sm:py-0 shadow-md px-4 py-4'>
           <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
             <img
               className="absolute object-cover w-full h-full rounded"
@@ -204,7 +59,7 @@ const OurTeam = () => {
             </div>
           </div>
         </div>
-        <div className='border sm:pb-4 hover:scale-105 duration-300	 sm:px-0 sm:py-0 shadow-md px-4 py-4'>
+        {/* <div className='border sm:pb-4 hover:scale-105 duration-300	 sm:px-0 sm:py-0 shadow-md px-4 py-4'>
           <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
             <img
               className="absolute object-cover w-full h-full rounded"
@@ -306,7 +161,7 @@ const OurTeam = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 <div className='h-20'></div>
