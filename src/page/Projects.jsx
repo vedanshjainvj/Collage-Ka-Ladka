@@ -12,6 +12,14 @@ import pp4 from '../assets/pp4.mp4';
 import pp5 from '../assets/pp5.mp4';
 import pp6 from '../assets/pp6.mp4';
 
+import tn1 from '../assets/thumbnails/tn1.png';
+import tn2 from '../assets/thumbnails/tn2.jpg';
+import tn3 from '../assets/thumbnails/tn3.png';
+import tn4 from '../assets/thumbnails/tn4.png';
+import tn5 from '../assets/thumbnails/tn5.jpg';
+import tn6 from '../assets/thumbnails/tn6.jpg';
+
+
 // Array of video sources
 const videos = [
   { id: 4, src: pp4 },
@@ -24,11 +32,11 @@ const videos = [
 
 // Array of YouTube thumbnail URLs
 const youtubeThumbnails = [
-  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
-  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
-  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
-  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
-  'https://static-cse.canva.com/blob/1725957/1600w-wK95f3XNRaM.jpg',
+  tn1,
+  tn2,
+  tn3,
+  tn4,
+  tn5, tn6
 ];
 
 // Responsive options for different screen sizes
