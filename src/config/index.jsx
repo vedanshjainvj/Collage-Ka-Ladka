@@ -5,6 +5,8 @@ import {
   Handshake,
   User
 } from "lucide-react";
+import partner1 from "../assets/partner1.jpg";
+import partner2 from "../assets/partner2.jpg";
 import { BiBulb } from "react-icons/bi";
 import { BsBuildings } from "react-icons/bs";
 import { FaUsers } from "react-icons/fa";
@@ -227,7 +229,7 @@ export const numCard = [
 
 export const partner = [
   { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAICLqn_cZUzh16ZmB_9JIhR43Dwv_ie4Xxw&s" },
-  { src: "./assets/partner-2.png" },
-  { src: "./assets/partner-3.png" },
+  { src: partner1 },
+  { src: partner2 },
   { src: "./assets/partner-4.png" },
 ];

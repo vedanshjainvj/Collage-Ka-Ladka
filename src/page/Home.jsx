@@ -286,7 +286,7 @@ const Home = () => {
       {partner.map((item, index) => (
         <div
           key={index}
-          className="w-full h-16 flex justify-center items-center opacity-50 hover:opacity-100 transition-all"
+          className="w-full h-16 flex justify-center items-center opacity-90 hover:opacity-100 transition-all"
         >
           <img
             src={item.src}
