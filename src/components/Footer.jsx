@@ -67,7 +67,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {[
                 { name: "Privacy Policy", path: "/privacy" },
-                { name: "Terms Of Service", path: "/terms" },
+                { name: "Terms Of Service", path: "/terms-of-service" },
                 { name: "Disclaimer", path: "/disclaimer" },
                 { name: "Credits", path: "/credits" },
                 { name: "FAQ", path: "/faq" },
