@@ -25,7 +25,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-3">
                 <IoMail className="text-[#ff6400] flex-shrink-0" />
-                <span>support@ckl.com</span>
+                <span>ankitsahu00001@gmail.com</span>
               </p>
               <p className="flex items-center gap-3">
                 <FaPhone className="text-[#ff6400] rotate-90 flex-shrink-0" />

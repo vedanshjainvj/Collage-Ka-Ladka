@@ -41,6 +41,7 @@ import OurTeam from "./page/OurTeam";
 import TandC from "./page/TandC";
 
 export const AppRouter = () => {
+  console.log("hello")
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -49,8 +50,9 @@ export const AppRouter = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
-      {/* <Route path="/extra-component" element={<ExtraComponent />} /> */}
       <Route path="/terms-of-service" element={<TandC />} />
     </Routes>
+    
+  
   );
 };
