@@ -11,6 +11,10 @@ import pp3 from '../assets/pp3.mp4';
 import pp4 from '../assets/pp4.mp4';
 import pp5 from '../assets/pp5.mp4';
 import pp6 from '../assets/pp6.mp4';
+import pp7 from '../assets/pp7.mp4';
+import pp8 from '../assets/pp8.mp4';
+import pp9 from '../assets/pp9.mp4';
+import pp10 from '../assets/pp10.mp4';
 
 import tn1 from '../assets/thumbnails/tn1.png';
 import tn2 from '../assets/thumbnails/tn2.jpg';
@@ -18,6 +22,7 @@ import tn3 from '../assets/thumbnails/tn3.png';
 import tn4 from '../assets/thumbnails/tn4.png';
 import tn5 from '../assets/thumbnails/tn5.jpg';
 import tn6 from '../assets/thumbnails/tn6.jpg';
+
 
 
 // Array of video sources
@@ -28,6 +33,11 @@ const videos = [
   { id: 1, src: pp1 },
   { id: 2, src: pp2 },
   { id: 3, src: pp3 },
+  { id: 7, src: pp7 },
+  { id: 8, src: pp8 },
+  { id: 9, src: pp9 },
+  { id: 10, src: pp10 },
+
 ];
 
 // Array of YouTube thumbnail URLs
