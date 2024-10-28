@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import React from "react";
+import React,{useState} from "react";
 import { LuMail } from "react-icons/lu";
 import Button from "./Button";
 import { Motion } from "./Motion";
@@ -7,15 +7,57 @@ import { H3 } from "./typographyh3";
 import { H4 } from "./typographyh4";
 import { P } from "./typographypara";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import emailjs from '@emailjs/browser';
+import { set } from "date-fns";
 
 const EContactFormTwo = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [projectType, setProjectType] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICEID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATEID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLICKEY;
+
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    projectType: projectType,
+    phone: phone,
+    to_name: "CKL Empire Agency", 
+    message: message,
+  };
+
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (response) => {
+        alert("SUCCESS!", response.status, response.text);
+        setName("");
+        setEmail("");
+        setProjectType("");
+        setPhone("");
+        setMessage("");
+      },
+    ).catch(
+      (error) => {
+        alert("FAILED...", error);
+      }
+    );
+  
+    
+  }
   return (
     <MaxWidthWrapper className="py-16 px-0 overflow-auto">
       <div className="mx-auto max-w-screen-xl p-8 sm:px-6 lg:px-8 lg:pr-32  rounded-xl border-[1.6px] border-zinc-300/10">
         <div className="grid grid-cols-1 gap-x-16 gap-y-12 lg:grid-cols-5">
           {/* Contact Form */}
           <div className="rounded-lg p-4 lg:col-span-3 lg:p-12">
-            <form action="#" className="space-y-4">
+            <form onSubmit={handleSubmit} action="#" className="space-y-4">
               <Motion direction="left">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
@@ -26,6 +68,8 @@ const EContactFormTwo = () => {
                       className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Your Name"
                       type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       id="name"
                     />
                   </div>
@@ -37,6 +81,8 @@ const EContactFormTwo = () => {
                       className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Project Type"
                       type="text"
+                      value={projectType}
+                      onChange={(e) => setProjectType(e.target.value)}
                       id="text"
                     />
                   </div>
@@ -53,6 +99,8 @@ const EContactFormTwo = () => {
                       className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Email"
                       type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       id="email"
                     />
                   </div>
@@ -64,6 +112,8 @@ const EContactFormTwo = () => {
                       className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                       placeholder="Phone"
                       type="text"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       id="phone"
                     />
                   </div>
@@ -79,6 +129,8 @@ const EContactFormTwo = () => {
                     className="w-full bg-[#e1e1e2] rounded-lg border-[1.6px] border-zinc-300/10 px-6 py-4 text-base text-zinc-900"
                     placeholder="Tell us about your project"
                     rows="8"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     id="message"
                   ></textarea>
                 </div>
@@ -88,7 +140,7 @@ const EContactFormTwo = () => {
                   <Button
                     bg
                     type="submit"
-                    href="/get-started"
+            
                     className="w-full bg-[#908ce1] transition-all hover:bg-[#7f7bcd] rounded-xl px-10 py-4 flex items-center justify-center text-wrap"
                   >
                     <span className="capitalize">Send Message</span>
