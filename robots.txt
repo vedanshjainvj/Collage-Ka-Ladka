@@ -5,4 +5,4 @@ Disallow: /login/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://www.collegekaladka.com/sitemap.xml
+Sitemap: https://www.cklempire.com/sitemap.xml
